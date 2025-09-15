@@ -1,0 +1,78 @@
+.container {
+  height: 100dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(182, 119, 240);
+  font-family: "Poppins";
+}
+
+.container .calculator {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: whitesmoke;
+  padding: 20px 20px 10px 20px;
+  width: 120px;
+  border-radius: 18px;
+}
+
+.container .calculator .result {
+  width: 100%;
+  background-color: whitesmoke;
+  padding: 5px 6px;
+  border-radius: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 16px;
+  box-shadow: 2px 2px 4px rgb(186, 186, 186);
+}
+
+.container .calculator .result input {
+  background-color: rgb(233, 250, 245);
+  font-size: medium;
+  width: 100%;
+  text-align: end;
+  border-radius: 12px;
+  border: none;
+  padding: 4px 9px;
+}
+
+.container .calculator .button {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container .calculator .button div {
+  margin-bottom: 8px;
+  display: flex;
+  gap: 8px;
+}
+
+.container .calculator .button div button {
+  width: 28px;
+  height: 28px;
+  background-color: rgb(245, 251, 250);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 50%;
+  box-shadow: 1px 1px 5px rgb(186, 186, 186) inset;
+  box-shadow: 1px 1px 4px rgb(186, 186, 186);
+}
+
+.container .calculator .button div .operand {
+  background-color: pink;
+}
+
+.container .calculator .button div .clear {
+  background-color: pink;
+}
+.container .calculator .button div .equal {
+  background-color: pink;
+}
