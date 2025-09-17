@@ -20,6 +20,7 @@
 
 .container .calculator .result {
   width: 100%;
+  height: 3rem;
   background-color: whitesmoke;
   padding: 5px 6px;
   border-radius: 16px;
@@ -32,12 +33,17 @@
 
 .container .calculator .result input {
   background-color: rgb(233, 250, 245);
-  font-size: medium;
+  font-size: xx-large;
+  font-weight: bold;
   width: 100%;
+  height: 100%;
   text-align: end;
   border-radius: 12px;
   border: none;
   padding: 4px 9px;
+}
+.container .calculator .result input::placeholder {
+  font-size: xx-large;
 }
 
 .container .calculator .button {
@@ -66,6 +72,11 @@
   box-shadow: 1px 1px 4px rgb(186, 186, 186);
 }
 
+.container .calculator .button div button .delete-icon {
+  width: 12px;
+  height: 12px;
+}
+
 .container .calculator .button div .operand {
   background-color: pink;
 }
@@ -75,4 +86,47 @@
 }
 .container .calculator .button div .equal {
   background-color: pink;
+}
+
+/* Media queries */
+/* Media query for mobile */
+
+@media only screen and (max-width: 600px) {
+  .container {
+    overflow: hidden;
+  }
+
+  .container .calculator {
+    width: 100dvw;
+    height: 100dvh;
+    display: flex;
+    align-items: center;
+    padding-bottom: 5px;
+    background-color: whitesmoke;
+  }
+
+  .container .calculator .result {
+    height: 5rem;
+    margin-bottom: 55px;
+  }
+
+  .container .calculator .button {
+    gap: 20px;
+  }
+
+  .container .calculator .button div {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+  }
+
+  .container .calculator .button div button {
+    width: 55px;
+    height: 55px;
+    font-size: x-large;
+  }
+  .container .calculator .button div button .delete-icon {
+    width: 25px;
+    height: 25px;
+  }
 }
